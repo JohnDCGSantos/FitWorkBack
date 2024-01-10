@@ -11,7 +11,7 @@ require('./db')
 const express = require('express')
 
 const app = express()
-app.use('/images', express.static(path.join(__dirname, 'data')))
+app.use('/images', express.static(path.join(__dirname, './data')))
 
 // ℹ️ This function is getting exported from the config folder. It runs most pieces of middleware
 require('./config')(app)
